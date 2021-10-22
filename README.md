@@ -10,5 +10,6 @@ Multi-section landing page featuring a dynamic menu as well as a smooth scroll e
 2. Download project (https://github.com/udacity/fend/tree/refresh-2019) 
 3. Clone branch  'refresh 2019'
 
-## Credits 
-[Martin Tavernier](https://stackoverflow.com/questions/69659080/scroll-function-to-navigate-to-appropriate-section-using-javascript/69659199#69659199) for quick response and help around scroll function issue.
+## Credits & appreciation 🙏 ⭐️ 
+Teachers and support team at Udacity for feedback, review and support.
+[Martin Tavernier] (https://stackoverflow.com/questions/69659080/scroll-function-to-navigate-to-appropriate-section-using-javascript/69659199#69659199) for quick response and help around scroll function issue.
