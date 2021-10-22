@@ -4,7 +4,8 @@
  * DOM manipulation exercise. Build a dynamic landing page. 
  * 
  * Prerequisites:
- * HTML and CSS code provided
+ * files provided
+ * 
  * 
  * 
  * Main requirements:
@@ -27,7 +28,7 @@
 const container = document.createDocumentFragment();
 const menuList = document.getElementsByTagName('section');
 
-/* Function to create the navigation menu as a clickable link */
+/* Function to create an anchor link with appropriate values */
 function navigationLink(id, name) {
     const navLink = `<a class="menu__link" href="#${id}">${name}</a>`;
     return navLink;
@@ -57,16 +58,7 @@ function menuItemInViewport(elem) {
     );
 };
 
-// Add class 'active' to menuList when near top of viewport
-function setActiveClass() {
-    for (let i = 0; i < menuList.length; i++) {
-        if (menuItemInViewport(menuList[i])) {
-            menuList[i].classList.add("your-active-class");
-        } else {
-            menuList[i].classList.remove("your-active-class");
-        }
-    }
-}
+
 
 // Scroll to anchor ID using scrollTO function
 function scrollToElement(event) {
@@ -76,8 +68,21 @@ function scrollToElement(event) {
     }
 }
 
-document.addEventListener('scroll', function () {
-    setActiveClass();
+// document.addEventListener('scroll', function () {
+//     setActiveClass();
+// });
+
+// Add class 'active' to menuList item 
+let menuItems = document.querySelectorAll('menu__link')
+
+menuItems.forEach(newMenuListItem => {
+    newMenuListItem.addEventListener('click', function setActiveClass() {
+        if (menuItemInViewport(menuList[i])) {
+            menuList[i].classList.add("your-active-class");
+        } else {
+            menuList[i].classList.remove("your-active-class");
+        }
+    });
 });
 
 const navBarMenu = document.getElementById('navbar__list')
@@ -87,4 +92,3 @@ navBarMenu.addEventListener('click', function (event) {
 
 // Build menu 
 createNavigation();
-
