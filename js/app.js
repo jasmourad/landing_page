@@ -58,8 +58,6 @@ function menuItemInViewport(elem) {
     );
 };
 
-
-
 // Scroll to anchor ID using scrollTO function
 function scrollToElement(event) {
     if (event.target == 'A') {
@@ -68,11 +66,8 @@ function scrollToElement(event) {
     }
 }
 
-// document.addEventListener('scroll', function () {
-//     setActiveClass();
-// });
-
 // Add class 'active' to menuList item 
+
 let menuItems = document.querySelectorAll('menu__link')
 
 menuItems.forEach(newMenuListItem => {
@@ -90,5 +85,5 @@ navBarMenu.addEventListener('click', function (event) {
     scrollToElement(event)
 })
 
-// Build menu 
+// Call function to build the navigation menu 
 createNavigation();
