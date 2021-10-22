@@ -4,8 +4,7 @@
  * DOM manipulation exercise. Build a dynamic landing page. 
  * 
  * Prerequisites:
- * files provided
- * 
+ * HTML and CSS files provided
  * 
  * 
  * Main requirements:
