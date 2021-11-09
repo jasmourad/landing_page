@@ -38,29 +38,19 @@
 
 
 
-const sectionFragment = document.createDocumentFragment();
-const sectionItems = document.querySelectorAll("section");
-const navBarList = document.getElementsByClassName('nav_menu');
-
-
-function buildNavBar {
-    for (let sectionItem = 0
-
-    )
-
-        sectionFragment.forEach((item, i) => {
-            const tag = document.createElement("a");
-            const listItem = document.createElement("li");
-
-
-            el.innerText = item;
-            el.classList.add("menu-items");
-            el.setAttribute("id", `menu-${i + 1}`);
-            el.href = `#section${i + 1}`;
-            navBarList.appendChild(el);
-        });
-
-
+ const navMenu = document.querySelectorAll("page_header");
+ const navList = document.getElementById("menu_list");
+ const items = ["Section 1", "Section 2", "Section 3", "Section 4"];
+ 
+ items.forEach((item, i) => {
+   const el = document.createElement("a");
+   el.innerText = item;
+   el.classList.add("menu-items");
+   el.setAttribute("id", `menu-${i + 1}`);
+   el.href = `#section${i + 1}`;
+   navList.appendChild(el);
+ });
+ 
 }
 
 //Create a navigation bar based on retrieved attributes of querySelectorAll method
