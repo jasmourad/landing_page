@@ -26,7 +26,7 @@
 
 
 
-//Defining global ariables 
+//Defining global variables 
 
 
 /** Invoking method (forEach) to add a list item for every section)
@@ -40,7 +40,7 @@
 
  const navMenu = document.querySelectorAll("page_header");
  const navList = document.getElementById("menu_list");
- const items = ["Section 1", "Section 2", "Section 3", "Section 4"];
+ const items = Array.document.getElementsByClassName('section');
  
  items.forEach((item, i) => {
    const el = document.createElement("a");
