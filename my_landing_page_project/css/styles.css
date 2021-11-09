@@ -1,0 +1,146 @@
+
+
+/*
+* Styling cred and inspiration: Available source code from Udacity: https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page
+
+* CSS architecture and styleguides retrieved from http://smacss.com/
+*
+*/
+
+/* ----Global styles---- */
+
+/*Smooth scroll added upon navigation selection*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(22, 22, 22);
+    background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(51, 51, 53) 100%);
+    margin: 0;
+    font-family: 'Circular';
+    color: #fff;
+}
+
+
+
+h1 {
+    font-family: 'Circular';
+    font-size: 4em;
+    margin: 2em 1rem;
+    
+}
+
+h2 {
+    border-top: 2px groove rgb(110, 252, 216);
+    border-left: 2px groove rgb(110, 252, 216);
+    font-family: 'Circular';
+    font-size: 3em;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    color: #fff;
+}
+
+p {
+    line-height: 2em;
+    color: #eee;
+}
+
+
+
+/* --- Main Layouts --- */
+main {
+    margin-top: 6vh;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 8vh;
+}
+
+.main_header {
+min-height: 30vh;
+padding-top: 2em;
+}
+
+.logo__header {
+    height: 70px;
+    width: 70px;
+    margin: 2em;
+}
+
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+
+/* Navigation menu styles, change these!!*/
+.nav__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.nav__menu li {
+    display: inline-block;
+}
+
+.nav__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+/* Landing Container Styles, retrieved from Udacity source file style */
+
+.landing__container {
+    margin: auto;
+    padding: 5em;
+    text-align: center;
+}
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+
+/* Header Styles */
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+
+/* Footer Styles */
+.page__footer {
+    border-top: 5px solid rgb(0, 138, 103);
+    background: rgb(0, 0, 0);
+    padding: 3em;
+    color: #fff;
+}
+
+.logo_footer {
+    height: 70px;
+    width: 70px;
+}
